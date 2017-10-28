@@ -5,7 +5,7 @@ import random
 class ai:
     def __init__(self):
         self.g = colorfight.Game()    
-        self.g.JoinGame('Kenneth')
+        self.g.JoinGame('zero')
 
 
     def main(self):
@@ -128,8 +128,13 @@ class ai:
                     att.append(cell_1)
         return att
 
-    def search_near_enemy(self):
+
+    def search_near_corner(self):
         mycell = self.my_cell()
+        for cell in mycell:
+            x = int(cell[0])
+            y = int(cell[1])
+            
 
 
     def attack_enemy(self):
